@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        card_view:cardCornerRadius="10dp"
+                                        card_view:cardElevation="8dp"
+                                        card_view:cardUseCompatPadding="true">
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+        
+            <!-- Text Notice Name -->
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold"/>
+
+            <!-- Text Notice subjectCode -->
+
+            <TextView
+                android:id="@+id/txt_subjectCode_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:text="код устройства"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/txt_subjectCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_subjectCode_name"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <TextView
+                android:id="@+id/txt_objectId_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_subjectCode"
+                android:text="объект привязки"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <!-- Text Notice objectId -->
+            <TextView
+                android:id="@+id/txt_objectId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_objectId_name"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <TextView
+                android:id="@+id/txt_km_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_objectId"
+                android:text="километр"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <!-- Text Notice km -->
+            <TextView
+                android:id="@+id/txt_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_km_txt"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <Button
+                android:id="@+id/edit_kip_button"
+                android:layout_width="150dp"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txt_km"
+                android:background="#00000000"
+                android:gravity="left"
+                android:padding="@dimen/padding_button"
+                android:text="Редактировать"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/monitoring_kip_button"
+                android:layout_width="110dp"
+                android:layout_height="37dp"
+                android:layout_below="@+id/txt_km"
+                android:layout_toStartOf="@+id/edit_kip_button"
+                android:background="#00000000"
+                android:gravity="left"
+                android:padding="@dimen/padding_button"
+                android:text="Мониторинг"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+

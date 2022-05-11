@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_normal">15dp</dimen>
+    <dimen name="text_size_max">20dp</dimen>
+    <dimen name="text_size_min">11dp</dimen>
+    <dimen name="padding_button">6dp</dimen>
+    <dimen name="layout_marginLeft_monitoring">10dp</dimen>
+
+</resources>

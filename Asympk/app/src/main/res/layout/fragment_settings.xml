@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Фильтровать  по"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_max"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+
+        <RadioButton
+            android:id="@+id/checkBoxKIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="КИП"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <RadioButton
+            android:id="@+id/checkBoxSKZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="СКЗ"
+            android:textSize="@dimen/text_size_normal"/>
+    </RadioGroup>
+
+
+</LinearLayout>
+

@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:text="название"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_name_txt"
+            android:textSize="@dimen/text_size_normal">
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/txt_quipment_number_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_et"
+            android:text="код устройства"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <EditText
+            android:id="@+id/quipment_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_quipment_number_txt"
+            android:textSize="@dimen/text_size_normal">
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt_km_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quipment_number_et"
+            android:text="километр"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <EditText
+            android:id="@+id/km_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/latitude_et"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_km_txt"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_normal">
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/txt_object_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_km_txt"
+            android:layout_alignBottom="@+id/txt_km_txt"
+            android:layout_alignStart="@+id/object_value"
+            android:text="объект привязки"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <Spinner
+            android:id="@+id/object_value"
+            style="@style/Animation.AppCompat.Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/km_et"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/km_et"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <TextView
+            android:id="@+id/txt_location_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/km_et"
+            android:layout_marginTop="11dp"
+            android:text="локация"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <TextView
+            android:id="@+id/txt__txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txt_location_txt"
+            android:layout_marginEnd="35dp"
+            android:text="ручной ввод"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_min"/>
+
+
+        <EditText
+            android:id="@+id/latitude_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt__txt"
+            android:layout_marginTop="17dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/text_size_normal">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/longitude_et"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/latitude_et"
+            android:layout_alignBottom="@+id/latitude_et"
+            android:layout_toEndOf="@+id/latitude_et"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/text_size_normal">
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_location_txt"
+        android:background="#00000000"
+        android:text="определить координаты"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>

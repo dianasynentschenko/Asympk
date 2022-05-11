@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_check_data_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:layout_marginTop="10dp"
+        android:text="последние обновления"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <!-- Text Notice checkDataTime -->
+    <TextView
+        android:id="@+id/txt_check_data_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/txt_current_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:text="ток"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <!-- Text Notice current -->
+
+    <TextView
+        android:id="@+id/txt_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:maxLength="5"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+    <TextView
+        android:id="@+id/txt_voltage_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:text="напряжение"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <!-- Text Notice voltage -->
+    <TextView
+        android:id="@+id/txt_voltage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:maxLength="5"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+    <TextView
+        android:id="@+id/txt_sum_pot_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:text="суммарный потенциал"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+    <!-- Text Notice sumPot -->
+    <TextView
+        android:id="@+id/txt_sum_pot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:maxLength="5"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <TextView
+        android:id="@+id/txt_pol_pot_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:text="поляризационный потенциал"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <!-- Text Notice polPot -->
+    <TextView
+        android:id="@+id/txt_pol_pot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_marginLeft_monitoring"
+        android:maxLength="5"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+
+
+
+
+</LinearLayout>
